@@ -22,6 +22,6 @@ During the initial VM creation, VirtualBox threw a `VERR_FILE_NOT_FOUND` error b
 
 ## Evidence
 - [evidence/vm-settings.png](evidence/vm-settings.png) — CPU, memory and disk as configured
-- [evidence/guest-release.txt](evidence/guest-release.txt) — Ubuntu Server is running in the guest
+- [evidence/guest-release.txt](evidence/guest-release.png) — Ubuntu Server is running in the guest
 - [evidence/broken.png](evidence/broken.png) — the guest in its broken state
 - [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot, after the rollback
