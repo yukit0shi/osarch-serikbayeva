@@ -32,7 +32,7 @@ lab01-ubuntu       lab02-windows
 | What I noticed | — |The host RAM in use increased significantly (from 7.8 GB to 12.7 GB) after starting both virtual machines, reflecting the overcommitted memory setup. |
 
 ## What did not work the first time
-When pinging the internet (8.8.8.8) from Ubuntu for the first time, I saw a 50% packet loss. It turned out to be the VirtualBox NAT router's initial delay in processing ICMP packets. I fixed it by running the ping command again to Cloudflare's DNS (1.1.1.1), which resulted in a clean 0% packet loss.
+Overcommitment: set 10 GB (Windows) + 8 GB (Ubuntu) = 18 GB total to go above the 16 GB host RAM, and set them back to 4 GB + 2 GB afterwards. 
 
 ## Evidence
 - [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Windows address
