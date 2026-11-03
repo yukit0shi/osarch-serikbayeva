@@ -11,7 +11,7 @@ Date: <01.11.2026>
 3. Network mode: NAT Network, both guests. Why: I used NAT Network because both guests must see each other and the internet, and bridged mode is blocked on campus Wi-Fi.
 4. Ping Ubuntu → Windows timed out because Windows Defender Firewall blocks incoming ICMP (ping) requests by default. Fixed with: `New-NetFirewallRule -Name "Allow_Ping" -DisplayName "Allow Ping ICMPv4" -Protocol ICMPv4 -IcmpType 8 -Action Allow`
 5. To demonstrate RAM overcommitment, I allocated 10 GB of RAM to the Ubuntu guest and 8 GB of RAM to the Windows guest. This totals 18 GB, which explicitly exceeds my host machine's total physical memory of 16 GB. The Task Manager screenshots show the clear before-and-after memory spike. After taking the evidence, I reduced the RAM back to safe levels (2 GB and 4 GB) to keep my host stable.
-
+After taking this evidence, I reduced the RAM back to safe operational levels (2 GB and 4 GB) to keep my host stable.
 
 ## Network diagram
 Internet
