@@ -32,7 +32,7 @@ lab01-ubuntu       lab02-windows
 | What I noticed | — |The host RAM in use increased significantly (from 7.8 GB to 12.7 GB) after starting both virtual machines, reflecting the overcommitted memory setup. |
 
 ## What did not work the first time
-Overcommitment: set 10 GB (Windows) + 8 GB (Ubuntu) = 18 GB total to go above the 16 GB host RAM, and set them back to 4 GB + 2 GB afterwards. 
+When I first tried to ping the Windows guest from the Ubuntu guest, the ping failed with a 100% packet loss (Request Timed Out). The cause was that the Windows Defender Firewall blocks incoming ICMPv4 (ping) echo requests by default. I resolved this by opening PowerShell as Administrator in the Windows VM and running the command `New-NetFirewallRule -DisplayName "Allow Ping ICMPv4" -Protocol ICMPv4 -IcmpType 8 -Action Allow`, which allowed the pings to pass through successfully.
 
 ## Evidence
 - [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Windows address
