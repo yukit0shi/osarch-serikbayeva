@@ -147,6 +147,6 @@ Neither of us has a Mac, so there is no macOS column.
 
 ## Evidence
 
-- `evidence/photos/` — the makers' photos or screenshots, one for each of the ten parts.
-- `evidence/windows-specs.txt` — each PowerShell command followed by its raw output.
-- `evidence/linux-specs.txt` — each Linux command followed by its raw output.
+- [evidence/photos/](evidence/photos/)` — the makers' photos or screenshots, one for each of the ten parts.
+- [evidence/windows-specs.txt](evidence/windows-specs.txt) — each PowerShell command followed by its raw output.
+- [evidence/linux-specs.txt](evidence/linux-specs.txt) — each Linux command followed by its raw output.
