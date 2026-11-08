@@ -1,0 +1,76 @@
+yukitoshi@lab01-ubuntu:~$ lscpu
+Architecture:                x86_64
+  CPU op-mode(s):            32-bit, 64-bit
+  Address sizes:             48 bits physical, 48 bits virtual
+  Byte Order:                Little Endian
+CPU(s):                      2
+  On-line CPU(s) list:       0,1
+Vendor ID:                   AuthenticAMD
+  Model name:                AMD Ryzen 7 H 255 W/ Radeon 780M
+    CPU family:              25
+    Model:                   117
+    Thread(s) per core:      1
+    Core(s) per socket:      2
+    Socket(s):               1
+    Stepping:                2
+    BogoMIPS:                7585.79
+    Flags:                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca c
+                             mov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxe
+                             xt fxsr_opt rdtscp lm constant_tsc rep_good nopl xtopology
+                              nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqd
+                             q ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx
+                             f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm s
+                             se4a misalignsse 3dnowprefetch vmmcall fsgsbase bmi1 avx2
+                             bmi2 invpcid rdseed adx clflushopt sha_ni arat
+Virtualization features:
+  Hypervisor vendor:         KVM
+  Virtualization type:       full
+NUMA:
+  NUMA node(s):              1
+  NUMA node0 CPU(s):         0,1
+Vulnerabilities:
+  Gather data sampling:      Not affected
+  Ghostwrite:                Not affected
+  Indirect target selection: Not affected
+  Itlb multihit:             Not affected
+  L1tf:                      Not affected
+  Mds:                       Not affected
+  Meltdown:                  Not affected
+  Mmio stale data:           Not affected
+  Old microcode:             Not affected
+  Reg file data sampling:    Not affected
+  Retbleed:                  Not affected
+  Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+  Spec store bypass:         Not affected
+  Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sa
+                             nitization
+  Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB
+                             -eIBRS Not affected; BHI Not affected
+  Srbds:                     Not affected
+  Tsa:                       Vulnerable: No microcode
+  Tsx async abort:           Not affected
+  Vmscape:                   Not affected
+yukitoshi@lab01-ubuntu:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       458Mi       2.7Gi       1.1Mi       397Mi       2.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+yukitoshi@lab01-ubuntu:~$ sudo dmidecode -t memory
+[sudo: authenticate] Password:
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 2.5 present.
+
+yukitoshi@lab01-ubuntu:~$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE
+NAME  MODEL         ROTA TRAN    SIZE
+loop0                  1        66.8M
+loop1                  1        66.8M
+loop2                  1         1.5M
+loop3                  1         1.5M
+loop4                  1        50.1M
+sda   VBOX HARDDISK    1 sata     25G
+sr0   VBOX CD-ROM      0 ata    1024M
+yukitoshi@lab01-ubuntu:~$ df -h /
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.6G  5.2G  52% /
+yukitoshi@lab01-ubuntu:~$ uname -m
+x86_64
