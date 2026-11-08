@@ -1,1 +1,49 @@
+PS C:\Users\Aiko> Get-CimInstance Win32_Processor | Select Name
 
+Name
+----
+AMD Ryzen 7 H 255 W/ Radeon 780M
+
+
+PS C:\Users\Aiko> Get-CimInstance Win32_Processor | Select NumberOfCores, NumberOfLogicalProcessors
+
+NumberOfCores NumberOfLogicalProcessors
+------------- -------------------------
+            8                        16
+
+
+PS C:\Users\Aiko> Get-CimInstance Win32_PhysicalMemory | Select Capacity
+
+   Capacity
+   --------
+17179869184
+
+
+PS C:\Users\Aiko> Get-CimInstance Win32_PhysicalMemory | Select DeviceLocator, Capacity, Speed, ConfiguredClockSpeed, SMBIOSMemoryType, FormFactor
+
+
+DeviceLocator        : DIMM 0
+Capacity             : 17179869184
+Speed                : 5600
+ConfiguredClockSpeed : 5600
+SMBIOSMemoryType     : 34
+FormFactor           : 12
+
+
+
+PS C:\Users\Aiko> Get-PhysicalDisk | Select FriendlyName, MediaType, BusType, Size
+
+FriendlyName       MediaType BusType         Size
+------------       --------- -------         ----
+YMTC PC42Q-512GB-B SSD       NVMe    512110190592
+
+
+PS C:\Users\Aiko> Get-Volume C
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
+C                        NTFS           Fixed     Healthy      OK                    250.36 GB 475.86 GB
+
+
+PS C:\Users\Aiko> $env:PROCESSOR_ARCHITECTURE
+AMD64
