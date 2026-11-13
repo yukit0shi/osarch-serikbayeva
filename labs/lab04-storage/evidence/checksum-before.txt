@@ -1,0 +1,3 @@
+$ sha256sum proof.txt random.bin
+ace39ee5016c1fc40890620bacba39c75acf1f103b39e3fff2e5d1797ce1551f  proof.txt
+9b348111e7d0eb3885d420d34e975cc0a3bb28621fb489220c694dd65bb9c4da  random.bin
