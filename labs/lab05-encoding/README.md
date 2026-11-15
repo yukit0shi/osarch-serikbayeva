@@ -38,15 +38,15 @@ The original `evidence/staff-broken.csv` is never modified; the script only read
 ## Verification
 - `evidence/file-after.txt`: `file` reports `Unicode text, UTF-8 (with BOM) text, with CRLF line terminators`. The hexdump starts with `ef bb bf 49 44 3b` (BOM, then `"ID;"`) and Cyrillic letters are now two-byte `d0 xx` / `d1 xx` pairs (e.g. `"Ф"` = `d0 a4`).
 - `evidence/opens-correctly.png`: Excel (opened by double-click), LibreOffice Calc (Character set `UTF-8`, separator `;`) and Git Bash (`cat`) side by side. All Russian and Kazakh names (`Әбдірахманова`, `Қасымов`, `Нұрлан`, `Жұмабаев`, `Өмірзақова`, …) are correct in all three. In Git Bash a few Kazakh letters look slightly spaced because of the console font; the bytes are correct, as the two spreadsheet views show.
+![All three applications](evidence/opens-correctly.png)
+
 
 ## What did not work the first time
 On my first attempt I ran only `iconv -f RK1048 -t UTF-8` without adding a BOM. `cat` in the terminal showed every name correctly, but double-clicking the file in Excel still showed garbage (`Р¤Р°РјРёР»РёСЏ` instead of `"Фамилия"`), because without `EF BB BF` at the start Excel falls back to a legacy code page. Adding the BOM line to `scripts/fix.sh` fixed it.
 
-![All three applications](evidence/opens-correctly.png)
 
 ## Files
 - [scripts/fix.sh](scripts/fix.sh) — conversion script (`RK1048` to `UTF-8` with BOM)
-- [evidence/staff-broken.csv](evidence/staff-broken.csv) — original file, untouched
 - [evidence/staff-fixed.csv](evidence/staff-fixed.csv) — result of `scripts/fix.sh`
 - [evidence/file-before.txt](evidence/file-before.txt) — `file` output before the fix
 - [evidence/hexdump-before.txt](evidence/hexdump-before.txt) — first 8 lines of the hex dump before the fix
