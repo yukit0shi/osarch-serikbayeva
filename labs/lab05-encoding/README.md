@@ -1,6 +1,6 @@
 # Lab 5 — Encoding forensics
 
-Name: <Твоя Фамилия> Aisulu · Date: 16.11.2026 · Tools: Git Bash (file, xxd, iconv), Excel, LibreOffice Calc
+Name: Aisulu · Date: 16.11.2026 · Tools: Git Bash (file, xxd, iconv), Excel, LibreOffice Calc
 
 ## What I received
 - **Excel:** Standard Russian letters opened fine, while Kazakh-specific characters broke into wrong symbols (for example, "Қ" appeared as "Ќ" and "Ә" as "Ј").
