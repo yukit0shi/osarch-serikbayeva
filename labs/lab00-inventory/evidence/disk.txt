@@ -1,1 +1,16 @@
+PS C:\WINDOWS\system32> Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size
+
+FriendlyName       MediaType BusType         Size
+------------       --------- -------         ----
+YMTC PC42Q-512GB-B SSD       NVMe    512110190592
+
+
+PS C:\WINDOWS\system32> Get-Volume | Select-Object DriveLetter, SizeRemaining, Size
+
+DriveLetter SizeRemaining         Size
+----------- -------------         ----
+                169338880    205520896
+C            220563161088 510945914880
+                 94117888    935325696
+
 
