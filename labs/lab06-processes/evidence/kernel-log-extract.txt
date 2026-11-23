@@ -1,0 +1,20 @@
+Nov 23 00:10:27 ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 184 times, consider switching to WQ_UNBOUND
+Nov 23 00:10:28 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 29 times, consider switching to WQ_UNBOUND
+Nov 23 00:10:29 ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 412 times, consider switching to WQ_UNBOUND
+Nov 23 00:10:30 ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 23 00:10:30 ubuntu kernel: CPU: 0 UID: 1000 PID: 2341 Comm: stress-ng-vm Tainted: G             L      7.0.0-43-generic #43-Ubuntu PREEMPT(lazy) 
+Nov 23 00:10:30 ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 23 00:10:30 ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 23 00:10:30 ubuntu kernel: Call Trace:
+Nov 23 00:10:30 ubuntu kernel:  <TASK>
+Nov 23 00:10:30 ubuntu kernel:  show_stack+0x49/0x60
+Nov 23 00:10:30 ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 23 00:10:30 ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 23 00:10:30 ubuntu kernel: [   2340]  1000  2340  1370526   398120   397992      128         0  5210112   241152          1000 stress-ng-vm
+Nov 23 00:10:30 ubuntu kernel: [   2341]  1000  2341  1370526   796288   796160      128         0 10670080   508928          1000 stress-ng-vm
+Nov 23 00:10:30 ubuntu kernel: [   2358]  1000  2358     4413     1017      316      701         0    77824        0             0 sleep
+Nov 23 00:10:30 ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2341,uid=1000
+Nov 23 00:10:30 ubuntu kernel: Out of memory: Killed process 2341 (stress-ng-vm) total-vm:5482104kB, anon-rss:3184640kB, file-rss:512kB, shmem-rss:0kB, UID:1000 pgtables:10420kB oom_score_adj:1000
+Nov 23 00:10:33 ubuntu kernel: workqueue: drain_vmap_area_work hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+Nov 23 00:10:35 ubuntu kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 112 times, consider switching to WQ_UNBOUND
