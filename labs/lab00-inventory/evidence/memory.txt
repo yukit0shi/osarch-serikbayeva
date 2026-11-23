@@ -1,1 +1,14 @@
+PS C:\WINDOWS\system32> Get-CimInstance Win32_PhysicalMemory | Select-Object DeviceLocator, Capacity, Speed
+
+DeviceLocator    Capacity Speed
+-------------    -------- -----
+DIMM 0        17179869184  5600
+
+
+PS C:\WINDOWS\system32> Get-CimInstance Win32_ComputerSystem | Select-Object TotalPhysicalMemory
+
+TotalPhysicalMemory
+-------------------
+        16385470464
+
 
