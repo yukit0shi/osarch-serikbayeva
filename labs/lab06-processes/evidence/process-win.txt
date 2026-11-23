@@ -1,0 +1,14 @@
+PS> Get-CimInstance Win32_Process -Filter 'ProcessId=4796' | Select-Object ProcessId, ParentProcessId, CommandLine | Format-List
+
+
+ProcessId       : 4796
+ParentProcessId : 8376
+CommandLine     : "C:\Windows\system32\PING.EXE" -t 127.0.0.1
+
+
+
+PS> Get-Process -Id 8376 | Select-Object Id, ProcessName
+
+  Id ProcessName
+  -- -----------
+8376 cmd
