@@ -1,6 +1,6 @@
 # Lab 6 — Live processes and memory pressure
 
-Pair: Aisulu (solo — completed individually) · Date: 23.11.2026 · Guests: Ubuntu Server 26.04.1 LTS (3.3 GiB RAM, 2.0 GiB swap) / Windows 11 (16 GB RAM)
+Pair: Aisulu · Date: 23.11.2026 · Guests: Ubuntu Server 26.04.1 LTS (3.3 GiB RAM, 2.0 GiB swap) / Windows 11 (16 GB RAM)
 
 ## Part 1 — One process, three tools
 
