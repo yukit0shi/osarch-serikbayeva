@@ -1,7 +1,7 @@
 # Lab 6 — Live processes and memory pressure
 
 Author: Aisulu 
-Machine: ASUS ROG Strix G16 (Windows 11, 16 GB RAM), VirtualBox
+Machine: Maibenben X16C (Windows 11, 16 GB RAM), VirtualBox
 Guests / Environment: Ubuntu Server 26.04.1 LTS (`2 vCPU`, RAM `3.3 GiB`, swap `2.0 GiB` `/swap.img`) · Windows 11 (`DESKTOP-PN2SJNK`)
 Date: 23.11.2026 (times in the Ubuntu logs are guest time, UTC)
 
