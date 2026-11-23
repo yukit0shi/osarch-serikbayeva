@@ -1,1 +1,12 @@
+PS C:\WINDOWS\system32> Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, VirtualizationFirmwareEnabled
+
+Name                             NumberOfCores NumberOfLogicalProcessors VirtualizationFirmwareEnabled
+----                             ------------- ------------------------- -----------------------------
+AMD Ryzen 7 H 255 W/ Radeon 780M             8                        16                          True
+
+
+PS C:\WINDOWS\system32> systeminfo | Select-String "Hyper-V"
+
+Hyper-V Requirements:          A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
 
