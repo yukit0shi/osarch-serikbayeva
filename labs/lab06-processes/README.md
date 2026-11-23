@@ -80,7 +80,7 @@ The second command verifies that the `Microsoft-Windows-Resource-Exhaustion-Dete
 
 ## What did not work the first time
 
-- **Clipboard paste in the VirtualBox console:** Multi-line commands could not be pasted directly into the black VirtualBox terminal window, so concise one-line loops (or SSH from Windows PowerShell) had to be used instead.
+- **Empty lower Handles pane in Process Explorer:** Even when running Process Explorer as Administrator and selecting `PING.EXE` (`PID 4796`), the bottom `Handles` pane stayed empty because Windows 11 Core Isolation / driver blocklist blocks Process Explorer's kernel driver from enumerating handle details (and filtering by `pin` hid the parent `cmd.exe` tree).
 - **Percentages below 100% did not exhaust memory:** Because `stress-ng --vm-bytes` allocates relative to *available* RAM rather than total RAM + swap (`3.3 GiB + 2.0 GiB = 5.3 GiB`), the `70%` run barely touched swap (`4.0 MiB`) and only `400%` saturated both RAM and swap to trigger the OOM killer.
 - **Quitting `htop` while search mode was active:** Pressing `F3` opened the bottom `Search:` prompt, capturing the `q` quit key as search text until `Esc` was pressed first to exit search mode.
 
