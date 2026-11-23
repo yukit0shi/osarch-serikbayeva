@@ -1,1 +1,86 @@
 
+=== BEFORE ===
+Mon Nov 23 00:10:02 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       252Mi       2.6Gi       1.2Mi       484Mi       2.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G   0B   -2
+---
+Mon Nov 23 00:10:05 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       252Mi       2.6Gi       1.2Mi       484Mi       2.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G   0B   -2
+---
+Mon Nov 23 00:10:08 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       2.5Gi       380Mi       1.2Mi       460Mi       670Mi
+Swap:          2.0Gi          0B       2.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G   0B   -2
+---
+Mon Nov 23 00:10:11 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       2.5Gi       376Mi       1.2Mi       460Mi       665Mi
+Swap:          2.0Gi       4.0Mi       2.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G   4M   -2
+---
+Mon Nov 23 00:10:14 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.0Gi       112Mi       1.2Mi       230Mi       215Mi
+Swap:          2.0Gi       348Mi       1.7Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 348M   -2
+---
+Mon Nov 23 00:10:17 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.0Gi       108Mi       1.2Mi       226Mi       208Mi
+Swap:          2.0Gi       382Mi       1.6Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 382M   -2
+---
+Mon Nov 23 00:10:20 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.1Gi        74Mi       1.2Mi       156Mi       118Mi
+Swap:          2.0Gi       1.1Gi       912Mi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 1.1G   -2
+---
+Mon Nov 23 00:10:23 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.1Gi        70Mi       1.2Mi       152Mi       112Mi
+Swap:          2.0Gi       1.2Gi       810Mi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 1.2G   -2
+---
+Mon Nov 23 00:10:26 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.2Gi        48Mi       1.2Mi        92Mi        38Mi
+Swap:          2.0Gi       1.6Gi       412Mi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 1.6G   -2
+---
+Mon Nov 23 00:10:29 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       3.2Gi        36Mi       1.2Mi        68Mi        18Mi
+Swap:          2.0Gi       2.0Gi          0B
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G   2G   -2
+---
+Mon Nov 23 00:10:32 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       248Mi       2.9Gi       1.2Mi       196Mi       2.9Gi
+Swap:          2.0Gi       156Mi       1.8Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 156M   -2
+---
+=== AFTER ===
+Mon Nov 23 00:10:35 UTC 2026
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       246Mi       2.9Gi       1.2Mi       200Mi       2.9Gi
+Swap:          2.0Gi       152Mi       1.9Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   2G 152M   -2
